@@ -19,11 +19,23 @@ Networks are parameterized with the hypotheses $H_0$ and $H_1$.<br>
 For the 1 dimensional example the network input has three input nodes:
 
 | 1 | 2 | 3 |
----
+| --- |--- |--- |
 | _measured_ x position | x position of $H_0$ | x position of $H_1$ |
 
 For the 2 dimensional example the network input has six input nodes:
 
 | 1 | 2 | 3 | 4 | 5 | 6 |
----
+|--- |--- |--- |--- |--- |--- |
 | _measured_ x position | _measured_ y position | x position of $H_0$ | y position of $H_0$ | x position of $H_1$ | y position of $H_1$ |
+
+## Classification Task
+
+The task for the network is basically classifiying an event into two categories ($H_0$ or $H_1$). <br>
+For this task there is a sigmoid function at the end of the the NN. 
+When cutting the sigmoid function away after training one obtains the log likelihod ratio between the two models.<br>
+This is better known as the _likelihood ratio trick_.
+The output approaches the log likelihood ratio wich is according to Neyman and Pearson the best test statistic.<br>
+The NN is therefore proven to do the best possible job to a non-analytic solution.
+
+
+
