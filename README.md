@@ -37,5 +37,20 @@ This is better known as the _likelihood ratio trick_.
 The output approaches the log likelihood ratio wich is according to Neyman and Pearson the best test statistic.<br>
 The NN is therefore proven to do the best possible job to a non-analytic solution.
 
+## Results
+
+### 1D
+
+![](../animations/1d_signal.gif)
+
+
+### 2D
+
+![](../animations/2d_signal_circular.gif)
+
+![](../animations/2d_signal_grid.gif)
+
+
+
 
 
