@@ -11,9 +11,19 @@ From there on, one can evaulate further on the test statistic and make a stateme
 
 This cannot be applied for non-analytic distribution which are often the case in particle physics environments. Nevertheless, the setup is predefined for using a classification model to determine if an event is accepted in the signal model or not. <br>
 
-Now, another limiting factor would be if we had to train for every siganl model a new NN. This can be solved in a way such that the neural network is paramterized with the $H_1$. 
+Now, another limiting factor would be if we had to train for every siganl model a new NN. This can be solved in a way such that the neural network is paramterized with the $H_0$ and $H_1$. 
 
 ## Parameterized Neural Networks 
 
-Networks are parameterized with the alternative hypothesis $H_1$. For the 1 dimensional example the network input has three input nodes for
+Networks are parameterized with the hypotheses $H_0$ and $H_1$.<br>
+For the 1 dimensional example the network input has three input nodes:
 
+| 1 | 2 | 3 |
+---
+| _measured_ x position | x position of $H_0$ | x position of $H_1$ |
+
+For the 2 dimensional example the network input has six input nodes:
+
+| 1 | 2 | 3 | 4 | 5 | 6 |
+---
+| _measured_ x position | _measured_ y position | x position of $H_0$ | y position of $H_0$ | x position of $H_1$ | y position of $H_1$ |
