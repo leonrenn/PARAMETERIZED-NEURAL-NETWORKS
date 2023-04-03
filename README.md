@@ -40,8 +40,11 @@ The NN is therefore proven to do the best possible job to a non-analytic solutio
 ## Results
 
 ### 1D
+The GIF shows two gaussian curves with different $\mu$
+ and the same $\sigma$. The ***orange*** curve displays the ***constant background***. The moving blue* curve is the ***physics signal***. The ***line in dark blue*** shows dependent on the position of the peaks (x-variable), the ***probability to discard the background hypothesis*** $H_0$ and accept the signal hypothesis $H_1$.<br>
+For the very special case where the two gaussian are overlapping, the blue line should be excactly horizontal. This is equivalent to sayin that the data can not be seperated in this case. Of course this imperfrection arises from imperfection of training and data preparation.
 
-![](../animations/1d_signal.gif)
+![](PARAMETERIZED-NEURAL-NETWORKS/animations/1d_signal.gif)
 
 
 ### 2D
