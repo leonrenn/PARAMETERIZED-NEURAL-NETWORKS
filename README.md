@@ -44,15 +44,29 @@ The GIF shows two gaussian curves with different $\mu$
  and the same $\sigma$. The ***orange*** curve displays the ***constant background***. The moving blue* curve is the ***physics signal***. The ***line in dark blue*** shows dependent on the position of the peaks (x-variable), the ***probability to discard the background hypothesis*** $H_0$ and accept the signal hypothesis $H_1$.<br>
 For the very special case where the two gaussian are overlapping, the blue line should be excactly horizontal. This is equivalent to sayin that the data can not be seperated in this case. Of course this imperfrection arises from imperfection of training and data preparation.
 
-![](../animations/1d_signal.gif)
+![](animations/1d_signal.gif)
 
 
 ### 2D
 
-![](../animations/2d_signal_circular.gif)
+The GIF shows events drawn from two different gaussian probability distributions. The events drawn from the signal distributions are parameterized in a circular and grid from. The background is depicting a probability to discard the background hypothesis. The probabilities correspond in such a way that:
+    - $0 = darkblue$
+    - $1 = yellow$
 
-![](../animations/2d_signal_grid.gif)
+#### Circular Movement 
 
+![](animations/2d_signal_circular.gif)
+
+#### Grid Movement
+
+![](animations/2d_signal_grid.gif)
+
+## Parameter Inference 
+
+The likelihood ratio trick enables us to do parameter inference on a certain signal with the trained paramterized neural network. This is done for the 1D and 2D example.<br>
+
+The log likelihood ratio is then summed up for every point for the underlying background and signal models.<br>.
+The best value for the interfered paramter can be found by looking at the maximum (or minimum) of the summed values.
 
 
 
