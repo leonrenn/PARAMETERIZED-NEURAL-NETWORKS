@@ -50,8 +50,8 @@ For the very special case where the two gaussian are overlapping, the blue line 
 ### 2D
 
 The GIF shows events drawn from two different gaussian probability distributions. The events drawn from the signal distributions are parameterized in a circular and grid from. The background is depicting a probability to discard the background hypothesis. The probabilities correspond in such a way that:
-    - $0 = darkblue$
-    - $1 = yellow$
+   - $0 = darkblue$
+   - $1 = yellow$
 
 #### Circular Movement 
 
@@ -65,7 +65,7 @@ The GIF shows events drawn from two different gaussian probability distributions
 
 The likelihood ratio trick enables us to do parameter inference on a certain signal with the trained paramterized neural network. This is done for the 1D and 2D example.<br>
 
-The log likelihood ratio is then summed up for every point for the underlying background and signal models.<br>.
+The log likelihood ratio is then summed up for every point for the underlying background and signal models.<br>
 The best value for the interfered paramter can be found by looking at the maximum (or minimum) of the summed values.
 
 
